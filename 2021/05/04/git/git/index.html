@@ -139,6 +139,15 @@
 									
 							<ul>
 								<li class="file">
+									<a href="/2021/05/04/blog/hexoStartPage/">
+										hexoStartPage
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2021/05/04/blog/hexo/">
 										hexo
 									</a>
@@ -223,40 +232,42 @@
 								<li class="directory">
 									<a href="#" class="directory">
 										<i class="fa fa-plus-square-o"></i>
+										mysql
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2021/05/06/mysql/mysqlSkills/">
+										mysqlSkills
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
 										oracle
 									</a>
 									
 							<ul>
 								<li class="file">
+									<a href="/2021/05/04/oracle/learnOfGover/">
+										learnOfGover
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
 									<a href="/2021/05/03/oracle/oracle0/">
 										oracle0
-									</a>
-								</li>
-								<div class="article-toc" style="display: none;"></div>
-							</ul>
-			
-							<ul>
-								<li class="file">
-									<a href="/2021/05/03/oracle/oracle1/">
-										oracle1
-									</a>
-								</li>
-								<div class="article-toc" style="display: none;"></div>
-							</ul>
-			
-							<ul>
-								<li class="file">
-									<a href="/2021/05/03/oracle/oracle2/">
-										oracle2
-									</a>
-								</li>
-								<div class="article-toc" style="display: none;"></div>
-							</ul>
-			
-							<ul>
-								<li class="file">
-									<a href="/2021/05/04/oracle/%E6%B5%8B%E8%AF%95/">
-										测试
 									</a>
 								</li>
 								<div class="article-toc" style="display: none;"></div>
@@ -290,16 +301,36 @@
 <div id="article-content">
 	<h3 id="搭建一个完整git的过程"><a href="#搭建一个完整git的过程" class="headerlink" title="搭建一个完整git的过程"></a>搭建一个完整git的过程</h3><h4 id="1，github上创建一个仓库"><a href="#1，github上创建一个仓库" class="headerlink" title="1，github上创建一个仓库"></a>1，github上创建一个仓库</h4><h4 id="2本地："><a href="#2本地：" class="headerlink" title="2本地："></a>2本地：</h4><h5 id="1-5-1-Git-使用前配置"><a href="#1-5-1-Git-使用前配置" class="headerlink" title="1.5.1 Git 使用前配置"></a>1.5.1 Git 使用前配置</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">电脑安装git  软件</span><br><span class="line">在使用 git 前，需要告诉 git 你是谁，在向 git 仓库中提交时需要用到。</span><br><span class="line"></span><br><span class="line">1. 配置提交人姓名：&#96;git config --global user.name 提交人姓名&#96;</span><br><span class="line">2. 配置提交人姓名：&#96;git config --global user.email 提交人邮箱&#96; </span><br><span class="line">3. 查看git配置信息：&#96;git config --list&#96;   </span><br><span class="line">   **注意**</span><br><span class="line">4. 如果要对配置信息进行修改，重复上述命令即可。</span><br><span class="line">5. 配置只需要执行一次。</span><br></pre></td></tr></table></figure>
 
-<h5 id="如果本地没有库，新建库"><a href="#如果本地没有库，新建库" class="headerlink" title="如果本地没有库，新建库"></a>如果本地没有库，新建库</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">…or create a new repository on the command line</span><br><span class="line">echo &quot;# blogSource&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">#  系统初始化后，会自动变成master分支，如果直接用master，不需要创建别的分支</span><br><span class="line">git branch -M main   #创建main分支</span><br><span class="line">git remote add origin git@github.com:Weiyuan-dis&#x2F;blogSource.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+<h5 id="如果本地没有库，新建库"><a href="#如果本地没有库，新建库" class="headerlink" title="如果本地没有库，新建库"></a>如果本地没有库，新建库</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">…or create a new repository on the command line</span><br><span class="line">echo &quot;# blogSource&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">#  系统初始化后，会自动变成master分支，如果直接用master，不需要创建别的分支，直接操作master分支即可</span><br><span class="line">git branch -M main   #创建main分支</span><br><span class="line">git remote add origin git@github.com:Weiyuan-dis&#x2F;blogSource.git</span><br><span class="line">git push -u origin main   </span><br><span class="line">#初次推送需加-u  origin，后面不用，直接git  push</span><br></pre></td></tr></table></figure>
 
-<h5 id="本地有库的操作"><a href="#本地有库的操作" class="headerlink" title="本地有库的操作"></a>本地有库的操作</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">or push an existing repository from the command line</span><br><span class="line">git remote add origin git@github.com:Weiyuan-dis&#x2F;blogSource.git</span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+<h5 id="git基本操作"><a href="#git基本操作" class="headerlink" title="git基本操作"></a>git基本操作</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">2. &#96;git status&#96; 查看文件状态</span><br><span class="line">3. &#96;git add 文件列表&#96; 追踪文件</span><br><span class="line">4. &#96;git commit -m 提交信息&#96;  向本地仓库中提交代码</span><br><span class="line">5. &#96;git log&#96; 查看提交记录</span><br></pre></td></tr></table></figure>
+
+<h6 id="内容回退"><a href="#内容回退" class="headerlink" title="内容回退"></a>内容回退</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">一，文件没有add到暂存区的情况,注意下面命令只针对所有有追踪记录的文件</span><br><span class="line">对于单个文件</span><br><span class="line">git checkout --filename</span><br><span class="line">对于多个文件</span><br><span class="line">git checkout .</span><br><span class="line">二，文件已经添加到暂存区‘绿色’</span><br><span class="line">2.1没有提交到分支</span><br><span class="line">git rm --cached filename</span><br><span class="line">如果使用git status 看到，红色的文件，则可以任意修改，再add</span><br><span class="line">2.2 对于有提交记录的文件</span><br><span class="line">Git reset HEAD file  &#x2F;&#x2F;让文件回到工作区</span><br><span class="line">git checkout --flile &#x2F;&#x2F;撤销更改</span><br><span class="line"></span><br><span class="line">- 用暂存区中的文件覆盖工作目录中的文件： &#96;git checkout 文件&#96;</span><br><span class="line">- 将文件从暂存区中删除： &#96;git rm --cached 文件&#96;</span><br><span class="line">- 将 git 仓库中指定的更新记录恢复出来，并且覆盖暂存区和工作目录：&#96;git rest --hard commitID&#96; </span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-2-暂时保存更改"><a href="#2-2-暂时保存更改" class="headerlink" title="2.2 暂时保存更改"></a>2.2 暂时保存更改</h3><p>在git中，可以暂时提取分支上所有的改动并存储，让开发人员得到一个干净的工作副本，临时转向其他工作。<br>使用场景：分支临时切换</p>
+<ul>
+<li>存储临时改动：<code>git stash</code></li>
+<li>恢复改动：`git stash pop</li>
+</ul>
+<h6 id="2-1-2-分支命令"><a href="#2-1-2-分支命令" class="headerlink" title="2.1.2 分支命令"></a>2.1.2 分支命令</h6><ul>
+<li><code>git branch</code> 查看分支</li>
+<li><code>git branch 分支名称</code> 创建分支</li>
+<li><code>git checkout 分支名称</code> 切换分支</li>
+<li><code>git merge 来源分支</code> 合并分支,在目前所在的分支合并别的分支。</li>
+<li><code>git branch -d 分支名称</code> 删除分支（分支被合并后才允许删除）（-D 强制删除）</li>
+<li>`</li>
+</ul>
+<h2 id="3-Github"><a href="#3-Github" class="headerlink" title="3. Github"></a>3. Github</h2><h5 id="本地有库的操作"><a href="#本地有库的操作" class="headerlink" title="本地有库的操作"></a>本地有库的操作</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">or push an existing repository from the command line</span><br><span class="line">git remote add origin git@github.com:Weiyuan-dis&#x2F;blogSource.git</span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
 
 <h5 id="在github上，把别的包引过来"><a href="#在github上，把别的包引过来" class="headerlink" title="在github上，把别的包引过来"></a>在github上，把别的包引过来</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">…or import code from another repository</span><br><span class="line">You can initialize this repository with code from a Subversion, Mercurial, or TFS project.</span><br></pre></td></tr></table></figure>
 
 
 
-
-
+<p> 3.4 拉取操作</p>
+<h4 id="3-4-1-克隆仓库"><a href="#3-4-1-克隆仓库" class="headerlink" title="3.4.1 克隆仓库"></a>3.4.1 克隆仓库</h4><p>克隆远端数据仓库到本地：<code>git clone 仓库地址</code></p>
+<h4 id="3-4-2-拉取远程仓库中最新的版本"><a href="#3-4-2-拉取远程仓库中最新的版本" class="headerlink" title="3.4.2 拉取远程仓库中最新的版本"></a>3.4.2 拉取远程仓库中最新的版本</h4><p>拉取远程仓库中最新的版本：<code>git pull 远程仓库地址 分支名称</code></p>
 
 </div>
 
@@ -307,11 +338,16 @@
     <div class="post-guide">
         <div class="item left">
             
+              <a href="/2021/05/04/blog/hexoStartPage/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  hexoStartPage
+              </a>
+            
         </div>
         <div class="item right">
             
-              <a href="/2021/05/04/oracle/%E6%B5%8B%E8%AF%95/">
-                测试
+              <a href="/2021/05/04/blog/hexo/">
+                hexo
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             
